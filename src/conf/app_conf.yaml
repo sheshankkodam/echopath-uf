@@ -1,0 +1,11 @@
+prod: &PROD
+  outputDirectory: '/Users/sheshank.kodam/Desktop/dev/src/avatars'
+
+dev:
+    <<: *PROD
+
+test:
+    <<: *PROD
+
+scqa:
+  <<: *PROD

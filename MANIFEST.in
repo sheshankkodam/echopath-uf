@@ -1,0 +1,3 @@
+recursive-include soup/frontend_static *
+recursive-include soup/conf *
+recursive-include soup/templates *

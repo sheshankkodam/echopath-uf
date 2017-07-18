@@ -1,0 +1,5 @@
+#!/bin/bash
+
+. soup-1.1.0/bin/activate
+soup &
+deactivate
