@@ -10,7 +10,7 @@ EchoPath UF website
 4. Navigate to `localhost:5000/echopath` to view the application
 
 ## Steps to run inside docker 
-1. Install docker `https://docs.docker.com/engine/installation/`
+1. Install docker https://docs.docker.com/engine/installation/
 2. Build docker image by running `docker build --tag=echopath-uf/image .`
 3. Remove dangling images `docker rmi $(docker images -f dangling=true -q)`
 4. Go in docker bash mode by running `docker run -ti -p 5000:5000 echopath-uf/image bash`
