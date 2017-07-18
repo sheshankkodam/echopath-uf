@@ -30,4 +30,4 @@ api2.add_resource(AppStatus, with_prefix(API_VERSION, 'status'))
 api2.add_resource(FileUpload, '/upload')
 
 if __name__ == '__main__':
-        app.run(debug=True)
+    app.run(host="127.0.0.1", port="5000")
