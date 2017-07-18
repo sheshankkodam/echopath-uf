@@ -7,7 +7,7 @@ EchoPath UF website
 1. Install `python`
 2. Install all required dependencies by running `pip install -r requirements.txt`
 3. Launch the application by running `python src/app.py`
-4. Navigate to `localhost:5000/echopath` to view the application
+4. Navigate to localhost:5000/echopath to view the application
 
 ## Steps to run inside docker 
 1. Install docker https://docs.docker.com/engine/installation/
@@ -15,7 +15,7 @@ EchoPath UF website
 3. Remove dangling images `docker rmi $(docker images -f dangling=true -q)`
 4. Go in docker bash mode by running `docker run -ti -p 5000:5000 echopath-uf/image bash`
 5. Launch the application by running `python src/app.py`
-6. Navigate to `localhost:5000/echopath` to view the application
+6. Navigate to localhost:5000/echopath to view the application
 
 
 ## Author
