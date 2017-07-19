@@ -1,15 +1,58 @@
+@import 'https://fonts.googleapis.com/css?family=Anton';
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
 body {
     margin: 0 auto;
     background: url("../images/bg.jpg") no-repeat;
     background-size: 100% 1080px;
 }
 
-header, footer {
-    padding: 1em;
-    color: white;
+header {
     background-color: black;
-    clear: left;
-    text-align: center;
+    color: white;
+    padding: 15px 0px 50px 40px;
+    height: 10px;
+}
+
+header h1 {
+    display: inline;
+    font-family: Anton, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: inline;
+    padding: 0px;
+    float: left;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    float: left;
+    padding: 8px 0px 60px 40px;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: medium;
+}
+
+nav ul li a {
+    color: white;
+    float: left;
+    text-decoration: none;
+}
+
+#navId{
+    font-family: Montserrat, sans-serif;
+}
+
+.divider {
+    background-color: orangered;
+    height: 2px;
 }
 
 .container{
