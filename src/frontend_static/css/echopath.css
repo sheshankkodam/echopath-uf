@@ -58,7 +58,7 @@ nav ul li a {
 
 .homeEchoPathPitch {
     font-family: Raleway sans-serif;
-    margin: 10% 0% 0% 5%;
+    margin: 2% 0% 0% 5%;
     padding: 0 0 0.5% 0;
     color: whitesmoke;
     font-size: 65px;
@@ -72,6 +72,23 @@ nav ul li a {
     /*padding: 0% 70% 0 5%;*/
     margin: 0% 40% 0 5.5%;
     display: inline-block;
+}
+
+.video-container {
+    position: relative;
+    padding: 0.5% 10% 56.25% 5%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 50%;
+height: 40%;
 }
 
 .container{
