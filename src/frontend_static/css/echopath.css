@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Anton';
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
 
 body {
     margin: 0 auto;
@@ -53,6 +54,23 @@ nav ul li a {
 .divider {
     background-color: orangered;
     height: 2px;
+}
+
+.homeEchoPathPitch {
+    font-family: Raleway sans-serif;
+    margin: 10% 0% 0% 5%;
+    padding: 0 0 0.5% 0;
+    color: whitesmoke;
+    font-size: 65px;
+}
+
+.homeEchoPathDesc {
+    font-family: "PT Sans Narrow", serif;
+    color: whitesmoke;
+    font-size: 25px;
+    /*padding: 0% 70% 0 5%;*/
+    margin: 0% 40% 0 5.5%;
+    display: inline-block;
 }
 
 .container{
