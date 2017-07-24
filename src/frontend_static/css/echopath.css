@@ -58,8 +58,8 @@ nav ul li a {
 
 .homeEchoPathPitch {
     font-family: Raleway sans-serif;
-    margin: 2% 0% 0% 5%;
-    padding: 0 0 0.5% 0;
+    /*margin: 2% 0% 0% 5%;*/
+    padding: 3% 40% 0.5% 5%;
     color: whitesmoke;
     font-size: 65px;
     display: inline-block;
@@ -69,8 +69,8 @@ nav ul li a {
     font-family: "PT Sans Narrow", serif;
     color: whitesmoke;
     font-size: 25px;
-    /*padding: 0% 70% 0 5%;*/
-    margin: 0% 40% 0 5.5%;
+    padding: 0% 40% 0 5%;
+    /*margin: 0% 40% 0 5.5%;*/
     display: inline-block;
 }
 
