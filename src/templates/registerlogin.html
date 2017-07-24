@@ -1,3 +1,39 @@
-<div>
-    <h1>Add login here</h1>
-</div>
+<html>
+    <head>
+        <title>EchoPath</title>
+        <script src="frontend_static/node_modules/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="frontend_static/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <script src="frontend_static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- Custom CSS @overrides bootstrap elements-->
+        <link rel="stylesheet" href="frontend_static/css/bootstrap_superhero.css">
+        <link rel="stylesheet" href="frontend_static/css/registerLogin.css">
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="formInputFirstName">
+                    <input type="text" name="first_name" placeholder="Enter First Name">
+                </div>
+                <div class="form-input">
+                    <input type="text" name="last_name" placeholder="Enter Last Name">
+                </div>
+                <div class="form-input">
+                    <input type="email" name="email" placeholder="Enter email Name">
+                </div>
+                <div class="form-input">
+                    <input type="text" name="password" placeholder="Enter password">
+                </div>
+                <div class="form-input">
+                    <select class="companyName">
+                      <option>Enter Company Name</option>
+                      <option>Dish</option>
+                      <option>EchoStar</option>
+                    </select>
+                </div>
+                <input class="btn_submit" type="submit" name="register" value="Register">
+            </form>
+
+        </div>
+    </body>
+</html>
