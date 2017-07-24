@@ -6,7 +6,7 @@ HEADERS = {'Cache-Control': 'private, src-age=0, no-cache',  # "src-age" overrid
            'Content-type': 'application/json'}
 
 
-@FRONTEND.route('/echopath', methods=['GET'])
+@FRONTEND.route('/', methods=['GET'])
 def home():
     return render_template("echopath.html")
 
