@@ -9,3 +9,8 @@ HEADERS = {'Cache-Control': 'private, src-age=0, no-cache',  # "src-age" overrid
 @FRONTEND.route('/echopath', methods=['GET'])
 def home():
     return render_template("echopath.html")
+
+
+@FRONTEND.route('/registerlogin.html', methods=['GET'])
+def registerlogin():
+    return render_template("registerlogin.html")
