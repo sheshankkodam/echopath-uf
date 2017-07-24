@@ -74,21 +74,14 @@ nav ul li a {
     display: inline-block;
 }
 
-.video-container {
-    position: relative;
-    padding: 0.5% 10% 56.25% 5%;
-    height: 0;
-    overflow: hidden;
+.homeComingSoon {
+    font-family: "FontAwesome", serif;
+    margin: 2% 40% 0 5.5%;
+    display: inline-block;
 }
 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 50%;
-height: 40%;
+.homeStoreImages {
+    float: left;
 }
 
 .container{
