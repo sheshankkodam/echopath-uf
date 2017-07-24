@@ -24,5 +24,5 @@ class AppStatus(Resource):
     )
     def get(self):
         uptime = int(round(time() * 1000)) - SERVER_START_TIME
-        successful_json = {"app": "src", "status": "Up and Listening", "uptime": uptime}
+        successful_json = {"app": "echopath-uf", "status": "Up and Listening", "uptime": uptime}
         return successful_json, httplib.OK, self.__HEADERS
