@@ -1,11 +1,12 @@
 prod: &PROD
   outputDirectory: '/Users/sheshank.kodam/Desktop/dev/src/avatars'
+  host: "0.0.0.0"
+  port: "80"
 
 dev:
     <<: *PROD
+    host: "0.0.0.0"
+    port: "5000"
 
 test:
     <<: *PROD
-
-scqa:
-  <<: *PROD
