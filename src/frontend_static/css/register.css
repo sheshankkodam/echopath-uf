@@ -17,7 +17,7 @@ body {
     border-radius: 10px;
 }
 
-input[type="text"], input[type=email] {
+input[type="text"], input[type=email], input[type=tel] {
     height: 45px;
     width: 400px;
     font-size: 18px;
