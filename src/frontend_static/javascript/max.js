@@ -10,10 +10,14 @@ $(document).ready(function () {
         console.log("Saving image");
         var firstName = document.getElementsByName("first_name")[0].value;
         var lastName = document.getElementsByName("last_name")[0].value;
+        var email = document.getElementsByName("email")[0].value;
+        var password = document.getElementsByName("password")[0].value;
 
         var frm = new FormData();
         frm.append('firstName', firstName);
         frm.append('lastName', lastName);
+        frm.append('email', email);
+        frm.append('password', password);
 
         $.ajax({
             type: 'POST',

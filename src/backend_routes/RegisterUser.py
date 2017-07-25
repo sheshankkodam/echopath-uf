@@ -15,7 +15,9 @@ class RegisterUser(Resource):
     def post(self):
         first_name = request.form['firstName']
         last_name = request.form['lastName']
-        print(first_name, last_name)
+        email = request.form['email']
+        password = request.form['password']
+        print(first_name, last_name, email, password)
 
         return 'file uploaded successfully1'
 
