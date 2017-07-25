@@ -9,7 +9,7 @@ class ConfigFactory:
     def __init__(self):
         pass
 
-    os_env = os.getenv("ESEENV", "PROD").lower()
+    os_env = os.getenv("ECHOPATH_ENV", "PROD").lower()
 
     @staticmethod
     def create_log_config():

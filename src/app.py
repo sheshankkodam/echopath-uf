@@ -6,6 +6,9 @@ from flask_restful_swagger import swagger
 from backend_routes.AppStatus import AppStatus
 from backend_routes.FileUpload import FileUpload
 from flask_restful import Api
+from src.ConfigFactory import ConfigFactory
+
+conf = ConfigFactory.create_app_config()
 
 app = Flask(__name__)
 app.register_blueprint(FRONTEND)
@@ -30,4 +33,4 @@ api2.add_resource(AppStatus, with_prefix(API_VERSION, 'status'))
 api2.add_resource(FileUpload, '/upload')
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port="80")
+    app.run(host=conf.host, port=conf.port)
