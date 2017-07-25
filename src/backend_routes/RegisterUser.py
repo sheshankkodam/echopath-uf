@@ -1,8 +1,10 @@
 from flask_restful import Resource, reqparse
 from flask import request
 from src.ConfigFactory import ConfigFactory
+from src.Database import Database
 
 conf = ConfigFactory.create_app_config()
+db = Database(conf)
 
 
 def validate_first_name(val):
@@ -66,6 +68,7 @@ class RegisterUser(Resource):
             validate_email(email)
             validate_password(password)
             validate_company_name(company_name)
+            db.save(first_name, last_name, phone_number, email, password, company_name)
             return 'Registration successful'
         except Exception as err:
             return err.message

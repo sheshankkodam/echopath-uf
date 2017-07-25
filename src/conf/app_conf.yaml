@@ -2,6 +2,11 @@ prod: &PROD
   outputDirectory: '/Users/sheshank.kodam/Desktop/dev/src/avatars'
   host: "0.0.0.0"
   port: "80"
+  Database:
+    Host: "mongodb://localhost:27017/"
+    DbName: "echopath"
+    UsersCollection: "users"
+    FeedbacksCollection: "feedbacks"
 
 dev:
     <<: *PROD
