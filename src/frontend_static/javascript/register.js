@@ -13,6 +13,7 @@ $(document).ready(function () {
         var phoneNumber = document.getElementsByName("phone_number")[0].value;
         var email = document.getElementsByName("email")[0].value;
         var password = document.getElementsByName("password")[0].value;
+        var companyName = document.getElementsByName("company_name")[0].value;
 
         var frm = new FormData();
         frm.append('firstName', firstName);
@@ -20,6 +21,7 @@ $(document).ready(function () {
         frm.append('phoneNumber', phoneNumber);
         frm.append('email', email);
         frm.append('password', password);
+        frm.append('companyName', companyName);
 
         $.ajax({
             type: 'POST',

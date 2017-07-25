@@ -18,7 +18,8 @@ class RegisterUser(Resource):
         phone_number = request.form['phoneNumber']
         email = request.form['email']
         password = request.form['password']
-        print(first_name, last_name, email, password, phone_number)
+        company_name = request.form['companyName']
+        print(first_name, last_name, email, password, phone_number, company_name)
 
         return 'file uploaded successfully1'
 
