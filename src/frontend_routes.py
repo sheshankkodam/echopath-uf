@@ -1,4 +1,4 @@
-from flask import render_template, Blueprint
+from flask import render_template, Blueprint, redirect, url_for
 
 FRONTEND = Blueprint('frontend_routes', __name__, template_folder='templates', static_folder='frontend_static',
                      static_url_path='/frontend_static')
@@ -7,10 +7,25 @@ HEADERS = {'Cache-Control': 'private, src-age=0, no-cache',  # "src-age" overrid
 
 
 @FRONTEND.route('/', methods=['GET'])
+def default():
+    return redirect(url_for("frontend_routes.home"))
+
+
+@FRONTEND.route('/home', methods=['GET'])
 def home():
     return render_template("echopath.html")
 
 
-@FRONTEND.route('/registerlogin.html', methods=['GET'])
-def registerlogin():
-    return render_template("registerlogin.html")
+@FRONTEND.route('/echopath.html', methods=['GET'])
+def echopath_html():
+    return redirect(url_for("frontend_routes.home"))
+
+
+@FRONTEND.route('/register.html', methods=['GET'])
+def register_html():
+    return redirect(url_for("frontend_routes.register"))
+
+
+@FRONTEND.route('/register', methods=['GET'])
+def register():
+    return render_template("register.html")
