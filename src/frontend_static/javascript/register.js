@@ -31,10 +31,16 @@ $(document).ready(function () {
             cache: false,
             processData: false,
             success: function (result) {
-               console.log(result);
+                console.log(result);
+                $('#notification-box').show()
+                document.getElementById('notification-box').style.visibility = 'visible';
+                document.getElementById('notification-box').innerHTML = result;
             },
             error: function (error) {
                 console.log(error);
+                $('#notification-box').show();
+                document.getElementById('notification-box').style.visibility = 'visible';
+                document.getElementById('notification-box').innerHTML = error;
             }
         })
     }
