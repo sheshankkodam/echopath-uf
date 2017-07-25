@@ -55,21 +55,38 @@ nav ul li a {
     height: 2px;
 }
 
+.mainHome {
+    float: left;
+    display: inline-block;
+}
+
+.homePhone {
+    float: right;
+    width: 20%;
+}
+
+.homeText {
+    float: left;
+    width: 80%;
+}
+
 .homeEchoPathPitch {
     font-family: Raleway sans-serif;
     /*margin: 2% 0% 0% 5%;*/
-    padding: 3% 40% 0.5% 5%;
+    padding: 3% 10% 0.5% 5%;
     color: #2a323a;
     font-size: 65px;
-    display: inline-block;
+    float: left;
+    display: block;
 }
 
 .homeEchoPathDesc {
     font-family: "PT Sans Narrow", serif;
     color: #2a323a;
     font-size: 25px;
-    padding: 0% 40% 0 5%;
+    padding: 0% 20% 0 5%;
     /*margin: 0% 40% 0 5.5%;*/
+    float: left;
     display: inline-block;
 }
 
@@ -78,10 +95,12 @@ nav ul li a {
     margin: 2% 40% 0 5.5%;
     color: #2a323a;
     display: inline-block;
+    float: left;
 }
 
 .homeStoreImages {
     float: left;
+    margin: 2% 0% 0 0%;
 }
 
 .container{
