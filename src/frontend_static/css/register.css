@@ -85,13 +85,13 @@ input[type="text"], input[type=email], input[type=tel] {
     border-bottom: 4px solid #2ECC71;
 }
 
-.registerStatusNotification {
-    width: 500px;
-    height: 50px;
-    text-align: center;
-    margin: 10px auto 0;
-    border-radius: 10px;
-    color: #2b3e50;
-    font-weight: bold;
-    visibility: hidden;
-}
+/*.registerStatusNotification {*/
+    /*width: 500px;*/
+    /*height: 50px;*/
+    /*text-align: center;*/
+    /*margin: 10px auto 0;*/
+    /*border-radius: 10px;*/
+    /*color: #2b3e50;*/
+    /*font-weight: bold;*/
+    /*visibility: hidden;*/
+/*}*/

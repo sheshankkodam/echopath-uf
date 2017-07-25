@@ -28,6 +28,23 @@ def validate_phone_num(val):
         raise Exception("Not a valid number")
 
 
+def validate_email(val):
+    if not val:
+        raise Exception("email cannot be empty")
+    if ".com" not in val:
+        raise Exception("Invalid email. emails should end with .com")
+
+
+def validate_password(val):
+    if not val:
+        raise Exception("password cannot be empty")
+
+
+def validate_company_name(val):
+    if val == "Enter Company Name":
+        raise Exception("Enter a valid company name")
+
+
 class RegisterUser(Resource):
     def __init__(self):
         self.__HEADERS = {'Cache-Control': 'private, src-age=0, no-cache', 'Content-type': 'application/json'}
@@ -42,11 +59,13 @@ class RegisterUser(Resource):
         email = request.form['email']
         password = request.form['password']
         company_name = request.form['companyName']
-        print(first_name, last_name, email, password, phone_number, company_name)
         try:
             validate_first_name(first_name)
             validate_last_name(last_name)
             validate_phone_num(phone_number)
+            validate_email(email)
+            validate_password(password)
+            validate_company_name(company_name)
             return 'Registration successful'
         except Exception as err:
             return err.message

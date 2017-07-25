@@ -6,6 +6,11 @@ $(document).ready(function () {
         saveImage();
     });
 
+    $('#success').click(function (e) {
+        e.preventDefault();
+        $('#message').html('<div class="alert alert-success fade in"><button type="button" class="close close-alert" data-dismiss="alert" aria-hidden="true">×</button>This is a success message</div>');
+    });
+
     function saveImage() {
         console.log("Saving image");
         var firstName = document.getElementsByName("first_name")[0].value;
@@ -32,15 +37,11 @@ $(document).ready(function () {
             processData: false,
             success: function (result) {
                 console.log(result);
-                $('#notification-box').show()
-                document.getElementById('notification-box').style.visibility = 'visible';
-                document.getElementById('notification-box').innerHTML = result;
+                alert(result)
             },
             error: function (error) {
                 console.log(error);
-                $('#notification-box').show();
-                document.getElementById('notification-box').style.visibility = 'visible';
-                document.getElementById('notification-box').innerHTML = error;
+                alert(error)
             }
         })
     }
