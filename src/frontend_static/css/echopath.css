@@ -82,7 +82,7 @@ nav ul li a {
 
 .homeEchoPathDesc {
     font-family: "PT Sans Narrow", serif;
-    color: #2a323a;
+    color: black;
     font-size: 40px;
     padding: 0% 0% 0 5%;
     /*margin: 0% 40% 0 5.5%;*/
@@ -93,7 +93,7 @@ nav ul li a {
 .homeComingSoon {
     font-family: "FontAwesome", serif;
     margin: 2% 40% 0 5.5%;
-    color: #2a323a;
+    color: black;
     display: inline-block;
     float: left;
 }
