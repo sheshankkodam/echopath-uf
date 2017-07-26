@@ -21,14 +21,14 @@ def echopath_html():
     return redirect(url_for("frontend_routes.home"))
 
 
-@FRONTEND.route('/register1.html', methods=['GET'])
+@FRONTEND.route('/register.html', methods=['GET'])
 def register_html():
     return redirect(url_for("frontend_routes.register"))
 
 
 @FRONTEND.route('/register', methods=['GET'])
 def register():
-    return render_template("register1.html")
+    return render_template("register.html")
 
 
 @FRONTEND.route('/feedback.html', methods=['GET'])
