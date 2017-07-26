@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>EchoPath</title>
+        <script src="../frontend_static/node_modules/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="../frontend_static/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!--<script src="frontend_static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
+
+        <!-- Custom CSS @overrides bootstrap elements-->
+        <link rel="stylesheet" href="../frontend_static/css/bootstrap_superhero.css">
+        <link rel="stylesheet" href="../frontend_static/css/echopath.css">
+        <link rel="stylesheet" href="../frontend_static/css/register.css">
+    </head>
+    <body>
+        <header>
+                <nav>
+                    <h1>EchoPath</h1>
+                    <ul id="navId">
+                        <li> <a href="echopath.html">Home</a> </li>
+                        <li> <a href="#">Loogo</a> </li>
+                        <li> <a href="#">Contact</a> </li>
+                        <li> <a href="#">Feedback</a> </li>
+                        <li> <a href="register1.html">Register</a> </li>
+                        <li> <a href="#" class="loginHeader"></a> </li>
+                    </ul>
+                </nav>
+            </header>
+        <div class="divider"></div>
+        <div class="container">
+            <form>
+                <div class="formInputFirstName">
+                    <input type="text" name="first_name" placeholder="Enter First Name">
+                </div>
+                <div class="form-input">
+                    <input type="text" name="last_name" placeholder="Enter Last Name">
+                </div>
+                <div class="form-input">
+                    <input type="tel" name="phone_number" placeholder="Enter Phone Number">
+                </div>
+                <div class="form-input">
+                    <input type="email" name="email" placeholder="Enter email Name">
+                </div>
+                <div class="form-input">
+                    <input type="text" name="password" placeholder="Enter password">
+                </div>
+                <div class="form-input">
+                    <select class="companyName" name="company_name">
+                      <option>Enter Company Name</option>
+                      <option>Dish</option>
+                      <option>EchoStar</option>
+                    </select>
+                </div>
+            </form>
+            <input class="btn_register" type="submit" name="register" value="Register">
+        </div>
+         <div class="alert alert-warning registerStatusNotification" id="notification-alert">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            <strong>Success! </strong>
+            Product have added to your wishlist.
+        </div>
+    </body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="application/javascript" src="../frontend_static/javascript/register.js"></script>
+</html>
