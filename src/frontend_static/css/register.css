@@ -4,20 +4,20 @@
 
 body {
     margin: 0 auto;
-    background: url("../images/bg3.jpg") no-repeat;
-    background-size: 100% 1080px;
+    background: url("../images/bg3.jpg") no-repeat fixed center center;
+    background-size: cover;
 }
 
 .container{
     width: 500px;
-    height: 470px;
+    height: 550px;
     text-align: center;
     background-color: rgba(52, 73, 94, 0.5);
-    margin: 150px auto 0;
+    margin: 100px auto 0;
     border-radius: 10px;
 }
 
-input[type="text"], input[type=email] {
+input[type="text"], input[type=email], input[type=tel] {
     height: 45px;
     width: 400px;
     font-size: 18px;
@@ -26,6 +26,19 @@ input[type="text"], input[type=email] {
     border-radius: 4px;
     text-align: left;
     padding-left: 10px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #2a323a;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #2a323a;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #2a323a;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #2a323a;
 }
 
 .companyName {
@@ -52,7 +65,7 @@ input[type="text"], input[type=email] {
 }
 
 .form-input {
-    padding: 2.5% 0.5% 0 0%;
+    padding: 2% 0.5% 0 0%;
 }
 
 /*.form-input::before {*/
@@ -71,3 +84,14 @@ input[type="text"], input[type=email] {
     border-radius: 4px;
     border-bottom: 4px solid #2ECC71;
 }
+
+/*.registerStatusNotification {*/
+    /*width: 500px;*/
+    /*height: 50px;*/
+    /*text-align: center;*/
+    /*margin: 10px auto 0;*/
+    /*border-radius: 10px;*/
+    /*color: #2b3e50;*/
+    /*font-weight: bold;*/
+    /*visibility: hidden;*/
+/*}*/
