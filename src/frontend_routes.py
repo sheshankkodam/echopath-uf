@@ -29,3 +29,13 @@ def register_html():
 @FRONTEND.route('/register', methods=['GET'])
 def register():
     return render_template("register.html")
+
+
+@FRONTEND.route('/feedback.html', methods=['GET'])
+def feedback_html():
+    return redirect(url_for("frontend_routes.feedback"))
+
+
+@FRONTEND.route('/feedback', methods=['GET'])
+def feedback():
+    return render_template("feedback.html")

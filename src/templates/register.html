@@ -1,14 +1,14 @@
 <html>
     <head>
         <title>EchoPath</title>
-        <script src="frontend_static/node_modules/jquery/dist/jquery.min.js"></script>
-        <link rel="stylesheet" href="frontend_static/node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <script src="frontend_static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../frontend_static/node_modules/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="../frontend_static/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!--<script src="frontend_static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
 
         <!-- Custom CSS @overrides bootstrap elements-->
-        <link rel="stylesheet" href="frontend_static/css/bootstrap_superhero.css">
-        <link rel="stylesheet" href="frontend_static/css/echopath.css">
-        <link rel="stylesheet" href="frontend_static/css/register.css">
+        <link rel="stylesheet" href="../frontend_static/css/bootstrap_superhero.css">
+        <link rel="stylesheet" href="../frontend_static/css/echopath.css">
+        <link rel="stylesheet" href="../frontend_static/css/register.css">
     </head>
     <body>
         <header>
@@ -49,13 +49,14 @@
                       <option>EchoStar</option>
                     </select>
                 </div>
-                <input class="btn_submit" type="submit" name="register" value="Register">
             </form>
+            <input class="btn_register" type="submit" name="register" value="Register">
         </div>
-        <!--<div class="alert alert-warning registerStatusNotification" id='notification-box'>-->
-             <!--This notification box can alert the status of the registration-->
-        <!--</div>-->
-
+         <div class="alert alert-warning registerStatusNotification" id="notification-alert">
+            <button type="button" class="close" data-dismiss="alert">x</button>
+            <strong>Success! </strong>
+            Product have added to your wishlist.
+        </div>
     </body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="application/javascript" src="../frontend_static/javascript/register.js"></script>
