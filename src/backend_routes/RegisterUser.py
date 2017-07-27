@@ -47,6 +47,11 @@ def validate_company_name(val):
         raise Exception("Enter a valid company name")
 
 
+def validate_gender(val):
+    if val == "Enter Gender":
+        raise Exception("Enter a valid gender")
+
+
 class RegisterUser(Resource):
     def __init__(self):
         self.__HEADERS = {'Cache-Control': 'private, src-age=0, no-cache', 'Content-type': 'application/json'}
@@ -61,6 +66,7 @@ class RegisterUser(Resource):
         email = request.form['email']
         password = request.form['password']
         company_name = request.form['companyName']
+        gender = request.form['gender']
         try:
             validate_first_name(first_name)
             validate_last_name(last_name)
@@ -68,7 +74,8 @@ class RegisterUser(Resource):
             validate_email(email)
             validate_password(password)
             validate_company_name(company_name)
-            db.save_user(first_name, last_name, phone_number, email, password, company_name)
+            validate_gender(gender)
+            db.save_user(first_name, last_name, phone_number, email, password, company_name, gender)
             return 'Registration successful'
         except Exception as err:
             return err.message

@@ -24,6 +24,7 @@ function registerUser() {
     var email = document.getElementsByName("email")[0].value;
     var password = document.getElementsByName("password")[0].value;
     var companyName = document.getElementsByName("company_name")[0].value;
+    var gender = document.getElementsByName("gender")[0].value;
 
     var frm = new FormData();
     frm.append('firstName', firstName);
@@ -32,6 +33,7 @@ function registerUser() {
     frm.append('email', email);
     frm.append('password', password);
     frm.append('companyName', companyName);
+    frm.append('gender', gender);
 
     $.ajax({
         type: 'POST',
@@ -41,13 +43,9 @@ function registerUser() {
         cache: false,
         processData: false,
         success: function (result) {
-            console.log("yuppeee");
-            console.log(result);
             showNotificationAlert(result)
         },
         error: function (error) {
-            console.log("error");
-            console.log(error);
             showNotificationAlert(error)
         }
     });
