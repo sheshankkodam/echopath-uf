@@ -5,6 +5,7 @@ from frontend_routes import FRONTEND
 from flask_restful_swagger import swagger
 from backend_routes.AppStatus import AppStatus
 from backend_routes.RegisterUser import RegisterUser
+from backend_routes.Feedback import Feedback
 from flask_restful import Api
 from src.ConfigFactory import ConfigFactory
 
@@ -31,6 +32,7 @@ api2 = swagger.docs(Api(app), apiVersion='1.0',
 
 api2.add_resource(AppStatus, with_prefix(API_VERSION, 'status'))
 api2.add_resource(RegisterUser, '/registerUser')
+api2.add_resource(Feedback, '/feedback')
 
 if __name__ == '__main__':
     app.run(host=conf.host, port=conf.port)

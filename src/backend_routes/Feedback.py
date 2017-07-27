@@ -7,7 +7,7 @@ conf = ConfigFactory.create_app_config()
 db = Database(conf)
 
 
-class RegisterUser(Resource):
+class Feedback(Resource):
     def __init__(self):
         self.__HEADERS = {'Cache-Control': 'private, src-age=0, no-cache', 'Content-type': 'application/json'}
 
@@ -15,4 +15,5 @@ class RegisterUser(Resource):
         pass
 
     def post(self):
-        pass
+        db.save_feedback(request.data)
+        return "Thanks for the feedback"
