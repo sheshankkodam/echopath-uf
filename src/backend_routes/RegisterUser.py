@@ -68,7 +68,7 @@ class RegisterUser(Resource):
             validate_email(email)
             validate_password(password)
             validate_company_name(company_name)
-            db.save(first_name, last_name, phone_number, email, password, company_name)
+            db.save_user(first_name, last_name, phone_number, email, password, company_name)
             return 'Registration successful'
         except Exception as err:
             return err.message
