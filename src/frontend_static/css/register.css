@@ -2,18 +2,12 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat';
 @import 'https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i';
 
-body {
-    margin: 0 auto;
-    background: url("../images/bg3.jpg") no-repeat fixed center center;
-    background-size: cover;
-}
-
 .container{
     width: 500px;
-    height: 550px;
+    height: 620px;
     text-align: center;
     background-color: rgba(52, 73, 94, 0.5);
-    margin: 100px auto 0;
+    margin: 50px auto 0;
     border-radius: 10px;
 }
 
@@ -41,7 +35,7 @@ input[type="text"], input[type=email], input[type=tel] {
   color: #2a323a;
 }
 
-.companyName {
+.dropDown {
     height: 45px;
     width: 400px;
     font-size: 18px;

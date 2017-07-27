@@ -14,7 +14,7 @@ class Database:
     def current_utc_time_str(self):
         return datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ')
 
-    def save_user(self, first_name, last_name, phone_num, email, password, company_name):
+    def save_user(self, first_name, last_name, phone_num, email, password, company_name, gender):
         self.users_collection.update(
             {"email": email},
             {"$set": {
@@ -24,7 +24,8 @@ class Database:
                 'last_name': last_name,
                 'phone_num': phone_num,
                 'password': password,
-                'company_name': company_name
+                'company_name': company_name,
+                'gender': gender
             }}, upsert=True)
 
     def save_feedback(self, text):

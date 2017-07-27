@@ -1,4 +1,7 @@
 # Release Notes
+####1.3.0
+- Added gender to the register page
+
 ####1.0.0
 - Added echopath homepage feature
 
