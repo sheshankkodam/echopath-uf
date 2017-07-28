@@ -17,7 +17,6 @@ function showNotificationAlert(message) {
 }
 
 function registerUser() {
-    console.log("Saving image");
     var firstName = document.getElementsByName("first_name")[0].value;
     var lastName = document.getElementsByName("last_name")[0].value;
     var phoneNumber = document.getElementsByName("phone_number")[0].value;
