@@ -1,4 +1,6 @@
 # Release Notes
+####1.4.0
+- changed contact us styling 
 ####1.3.0
 - Added gender to the register page
 
