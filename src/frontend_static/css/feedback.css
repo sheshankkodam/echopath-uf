@@ -1,40 +1,87 @@
-.feedbackContainer {
-    width: 500px;
-    height: 550px;
-    text-align: center;
-    background-color: rgba(52, 73, 94, 0.5);
-    margin: 100px auto 0;
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+.oldPhone {
+    max-width: 100%;
+    display:block;
+    height: auto;
+    float: right;
     border-radius: 10px;
+    opacity: 0.5;
+    margin: 30px;
 }
 
-.feedbackGroup {
-    padding: 3% 0 0 2%;
+.contactUsText {
+    float: left;
+    width: 55%;
 }
 
-.feedbackText {
-    width: 480px;
-    font-size: 18px;
-    background-color: whitesmoke;
-    border-radius: 4px;
-    text-align: left;
+.contactUsHeader {
+    float: left;
+    color: #2a323a;
+    font-size: 30px;
+    padding: 5% 20% 0% 10%;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+
 }
 
-.btn_submit_feedback {
-    padding: 15px 30px;
-    color: #fff;
-    background-color: #2ECC71;
-    border: none;
-    border-radius: 4px;
-    border-bottom: 4px solid #2ECC71;
+.contactUsDesc {
+    float: left;
+    color: #2a323a;
+    font-size: 20px;
+    padding: 0% 20% 5% 10%;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
 }
 
-.feedbackNotification {
-    width: 500px;
-    height: 50px;
-    text-align: center;
-    margin: 10px auto 0;
-    border-radius: 10px;
-    color: #2b3e50;
-    font-weight: bold;
-}
+/*.box {*/
+    /*color: green;*/
+    /*float: left;*/
+    /*font-size: 20px;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.feedbackContainer {*/
+    /*width: 800px;*/
+    /*height: 500px;*/
+    /*text-align: center;*/
+    /*background-color: rgba(52, 73, 94, 0.5);*/
+    /*margin: 40px;*/
+    /*border-radius: 10px;*/
+    /*float: left;*/
+/*}*/
+
+
+
+/*.feedbackGroup {*/
+    /*padding: 3% 0 0 2%;*/
+/*}*/
+
+/*.feedbackText {*/
+    /*width: 480px;*/
+    /*font-size: 18px;*/
+    /*background-color: whitesmoke;*/
+    /*border-radius: 4px;*/
+    /*text-align: left;*/
+/*}*/
+
+/*.btn_submit_feedback {*/
+    /*padding: 15px 30px;*/
+    /*color: #fff;*/
+    /*background-color: #2ECC71;*/
+    /*border: none;*/
+    /*border-radius: 4px;*/
+    /*border-bottom: 4px solid #2ECC71;*/
+    /*left: 30px;*/
+/*}*/
+
+/*.feedbackNotification {*/
+    /*width: 500px;*/
+    /*height: 50px;*/
+    /*text-align: center;*/
+    /*margin: 10px auto 0;*/
+    /*border-radius: 10px;*/
+    /*color: #2b3e50;*/
+    /*font-weight: bold;*/
+/*}*/
 
