@@ -17,7 +17,7 @@
 
 .contactUsHeader {
     float: left;
-    color: #2a323a;
+    color: black;
     font-size: 30px;
     padding: 5% 20% 0% 10%;
     display: inline-block;
@@ -27,18 +27,44 @@
 
 .contactUsDesc {
     float: left;
-    color: #2a323a;
+    color: black;
     font-size: 20px;
     padding: 0% 20% 5% 10%;
     display: inline-block;
     font-family: Montserrat, sans-serif;
 }
 
-/*.box {*/
-    /*color: green;*/
+.feedbackText {
+    float: right;
+    width: 70%;
+}
+
+.feedbackHeader {
+    float: right;
+    color: black;
+    font-size: 30px;
+    padding: 10% 20% 0% 10%;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+}
+
+.feedbackDesc {
+    float: right;
+    color: black;
+    font-size: 20px;
+    padding: 0% 0% 0% 40%;
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+}
+
+/*.feedbackContainer{*/
+    /*width: 700px;*/
+    /*height: 620px;*/
+    /*text-align: center;*/
+    /*background-color: rgba(52, 73, 94, 0.5);*/
+    /*margin: 50px;*/
+    /*border-radius: 10px;*/
     /*float: left;*/
-    /*font-size: 20px;*/
-    /*display: inline-block;*/
 /*}*/
 
 /*.feedbackContainer {*/
