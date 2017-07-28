@@ -4,8 +4,7 @@
 $(document).ready(function () {
     $("#feedback-alert").hide();
     $(".btn_submit_feedback").click(function(){
-        var feedbackText = document.getElementById('feedbackId').value;
-        submitFeedback(feedbackText);
+        submitFeedback();
     });
 });
 
@@ -17,11 +16,20 @@ function showFeedbackNotification(message) {
 }
 
 
-function submitFeedback(text) {
+function submitFeedback() {
+    var name = document.getElementsByName("name")[0].value;
+    var email = document.getElementsByName("email")[0].value;
+    var feedbackText = document.getElementById("subject").value;
+
+    var frm = new FormData();
+    frm.append('name', name);
+    frm.append('email', email);
+    frm.append('feedbackText', feedbackText);
+
     $.ajax({
         type: 'POST',
         url: '/feedback',
-        data: text,
+        data: frm,
         contentType: false,
         cache: false,
         processData: false,

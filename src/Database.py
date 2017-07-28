@@ -28,9 +28,11 @@ class Database:
                 'gender': gender
             }}, upsert=True)
 
-    def save_feedback(self, text):
+    def save_feedback(self, name, email, feedback_text):
         self.feedbacks_collection.insert({
-            "text": text,
+            "name": name,
+            "email": email,
+            "feedback": feedback_text,
             "ts": self.current_utc_time_str()
         })
 

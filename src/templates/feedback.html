@@ -22,13 +22,40 @@
                         <li> <a href="#" class="loginHeader"></a> </li>
                     </ul>
                 </nav>
-            </header>
+        </header>
         <div class="divider"></div>
-        <div class="feedbackContainer">
-            <div class="form-group feedbackGroup">
-              <textarea class="form-control feedbackText" rows="17" id="feedbackId">Enter feedback here...</textarea>
-            </div>
-            <input class="btn_submit_feedback" type="submit" name="submit" value="Submit">
+        <div>
+             <span>
+                 <img class="oldPhone pull-right" src="../frontend_static/images/oldPhone.jpeg" width="600" height="500"/>
+             </span>
+             <span class="contactUsText">
+                 <p class="contactUsHeader">
+                     Contact Us
+                 </p>
+                 <p class="contactUsDesc">We are here to answer any questions you may have about EchoPath experiences.
+                    Reach out to us and we will respond as soon as we can
+                 </p>
+            </span>
+		</div>
+        <div>
+            <span class="feedbackText">
+                 <p class="feedbackHeader pull-right">
+                     Feedback
+                 </p>
+                 <p class="feedbackDesc">Even if there is something you have always wanted to experience and can't
+                     find it on EchoPath, let us know and we promise we'll do our best to resolve it.
+                 </p>
+            </span>
+            <span>
+                <div class="feedbackContainer">
+                    <form>
+                        <input type="text" id="name" name="name" placeholder="Your name..">
+                        <input type="email" id="email" name="email" placeholder="Your email..">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </form>
+                    <input class="btn_submit_feedback" type="submit" name="submit" value="Submit">
+                </div>
+            </span>
         </div>
         <div class="alert alert-success feedbackNotification" id="feedback-alert">
             <button type="button" class="close" data-dismiss="alert">x</button>
