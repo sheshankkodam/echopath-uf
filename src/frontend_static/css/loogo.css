@@ -55,22 +55,28 @@ nav ul li a {
     height: 2px;
 }
 
-.mainHome {
+.loogoHome {
     float: left;
     display: inline-block;
 }
 
-.homePhone {
+.loogoPhone {
     float: right;
     width: 25%;
+    opacity: 0.8;
 }
 
-.homeText {
+.loogoPhoneImg {
+    border-radius: 5px;
+    border: 10px solid #2a323a;
+}
+
+.loogoText {
     float: left;
     width: 70%;
 }
 
-.homeEchoPathPitch {
+.loogoPitch {
     font-family: Raleway sans-serif;
     /*margin: 2% 0% 0% 5%;*/
     padding: 3% 10% 0.5% 5%;
@@ -80,25 +86,12 @@ nav ul li a {
     display: block;
 }
 
-.homeEchoPathDesc {
+.loogoDesc {
     font-family: "PT Sans Narrow", serif;
     color: black;
     font-size: 25px;
-    padding: 0% 0% 0 5%;
+    padding: 0% 2% 0 5%;
     /*margin: 0% 40% 0 5.5%;*/
     float: left;
     display: inline-block;
-}
-
-.homeComingSoon {
-    font-family: "FontAwesome", serif;
-    margin: 2% 40% 0 5.5%;
-    color: black;
-    display: inline-block;
-    float: left;
-}
-
-.homeStoreImages {
-    float: left;
-    margin: 2% 0% 0 0%;
 }
