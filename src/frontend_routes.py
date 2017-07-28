@@ -21,6 +21,16 @@ def echopath_html():
     return redirect(url_for("frontend_routes.home"))
 
 
+@FRONTEND.route('/loogo.html', methods=['GET'])
+def loogo_html():
+    return redirect(url_for("frontend_routes.loogo"))
+
+
+@FRONTEND.route('/loogo', methods=['GET'])
+def loogo():
+    return render_template("loogo.html")
+
+
 @FRONTEND.route('/register.html', methods=['GET'])
 def register_html():
     return redirect(url_for("frontend_routes.register"))
