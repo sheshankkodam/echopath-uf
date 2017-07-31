@@ -49,3 +49,13 @@ def feedback_html():
 @FRONTEND.route('/feedback', methods=['GET'])
 def feedback():
     return render_template("feedback.html")
+
+
+@FRONTEND.route('/navigation.html', methods=['GET'])
+def navigation_html():
+    return redirect(url_for("frontend_routes.navigation"))
+
+
+@FRONTEND.route('/navigation', methods=['GET'])
+def navigation():
+    return render_template("navigation.html")
