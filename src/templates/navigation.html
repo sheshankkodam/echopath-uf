@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>EchoPath</title>
+        <script src="../frontend_static/node_modules/jquery/dist/jquery.min.js"></script>
         <link rel="stylesheet" href="../frontend_static/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <script src="../frontend_static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -27,20 +28,11 @@
         <div class="selectionsContainer">
             <div class="glyphicon glyphicon-map-marker fromMarker"></div>
             <div class="form-input">
-                <select class="dropDown" name="from_name">
-                  <option>From?</option>
-                  <option>Breck</option>
-                  <option>Durango</option>
-                  <option>Aspen</option>
-                </select>
+                <select class="dropDown" name="from_name" id="fromNameId"></select>
             </div>
             <div class="glyphicon glyphicon-map-marker toMarker"></div>
             <div class="form-input">
-                <select class="dropDown" name="to_name">
-                  <option>To?</option>
-                  <option>Breck</option>
-                  <option>Bridge</option>
-                </select>
+                <select class="dropDown" name="to_name"></select>
             </div>
            <div class="col-lg-12">
                 <div class="row goBtnRow">
@@ -52,6 +44,7 @@
         </div>
     </body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="application/javascript" src="../frontend_static/javascript/navigation.js"></script>
 </html>
 
 
