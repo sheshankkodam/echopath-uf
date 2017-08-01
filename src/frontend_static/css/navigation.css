@@ -1,0 +1,47 @@
+.selectionsContainer {
+    width: 500px;
+    height: 220px;
+    /*padding: 5% 5% 5% 5%;*/
+    /*text-align: center;*/
+    background-color: rgba(52, 73, 94, 0.5);
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.dropDown {
+    height: 45px;
+    width: 400px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: left;
+    padding-left: 10px;
+    color: #2b3e50;
+    float: left;
+}
+
+/*.form-input {*/
+    /*padding: 0% 0% 0% 5%;*/
+/*}*/
+.fromMarker {
+    color: orange;
+    font-size: 35px;
+    padding: 0% 2% 5% 5%;
+    float: left;
+}
+
+.toMarker {
+    color: #5cb85c;
+    font-size: 35px;
+    padding: 0% 2% 5% 5%;
+    float: left;
+}
+
+.goBtnRow {
+    padding: 0 0 0 85%;
+}
+
+.goBtn {
+    border-radius: 10px;
+}
