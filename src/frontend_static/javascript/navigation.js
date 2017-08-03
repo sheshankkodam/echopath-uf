@@ -2,8 +2,11 @@
  * Created by sheshank.kodam on 4/15/17.
  */
 
-var locationsUrl = "http://52.25.29.73:8080/echopath/location/locationsOnly";
+var baseUrl = "http://52.25.29.73:8080/echopath/location";
+var locationsOnlyUrl = baseUrl + "/locationsOnly";
+var shorestPathBaseUrl = baseUrl + "/shortestPath";
 $(document).ready(function () {
+    $("#navigation-alert").hide();
     buildDropDown($('#fromNameId'), 'From?');
     buildDropDown($('#toNameId'), 'To?');
 
@@ -12,26 +15,53 @@ $(document).ready(function () {
 function buildDropDown (dropDownId, emptyMessage) {
     $.ajax({
         type: "GET",
-        url: locationsUrl,
+        url: locationsOnlyUrl,
         success: function(data)
         {
             dropDownId.html('');
             dropDownId.append('<option value="">' + emptyMessage + '</option>');
             var locs = data["locations"];
-            var value = 1;
             locs.forEach(function (loc) {
-                dropDownId.append('<option value="' + value + '">' + loc.name + '</option>');
-                value ++
+                dropDownId.append('<option value="' + loc.id + '">' + loc.name + '</option>');
             });
         }
     });
 }
 
 $(".goBtn").click(function(){
-    var from = document.getElementById("fromNameId");
-    var to = document.getElementById("toNameId");
-    var fromText = from.options[from.selectedIndex].text;
-    var toText = to.options[to.selectedIndex].text;
-    console.log(fromText);
-    console.log(toText);
+    var fromObj = document.getElementById("fromNameId");
+    var toObj = document.getElementById("toNameId");
+    var fromLocId = fromObj.options[fromObj.selectedIndex].value;
+    var toLocId = toObj.options[toObj.selectedIndex].value;
+
+    if (isEmpty(fromLocId) && isEmpty(toLocId)) {
+        showNavigationAlert("Enter a valid From and To values")
+        return
+    }
+
+    if (isEmpty(fromLocId)) {
+        showNavigationAlert("Enter a valid From value")
+        return
+    }
+
+    if (isEmpty(toLocId)) {
+        showNavigationAlert("Enter a valid To value")
+        return
+    }
+
+    if (!isEmpty(fromLocId) && !isEmpty(toLocId)) {
+        var shortestPathUrl = shorestPathBaseUrl + "?fromID=" + fromLocId + "&toID=" + toLocId;
+        showNavigationAlert("hello")
+    }
 });
+
+function showNavigationAlert(message) {
+    $("#navigation-alert").html(message);
+    $("#navigation-alert").fadeTo(5000, 500).slideUp(500, function(){
+        $("#navigation-alert").slideUp(500);
+    });
+}
+
+function isEmpty(value){
+  return (value == null || value.length === 0);
+}
