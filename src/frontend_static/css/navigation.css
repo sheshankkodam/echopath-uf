@@ -55,3 +55,12 @@
     color: #2b3e50;
     font-weight: bold;
 }
+
+.directionsContainer {
+    width: 500px;
+    height: 620px;
+    text-align: center;
+    background-color: rgba(52, 73, 94, 0.5);
+    margin: 1%;
+    border-radius: 10px;
+}
