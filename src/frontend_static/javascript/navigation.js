@@ -26,3 +26,12 @@ function buildDropDown (dropDownId, emptyMessage) {
         }
     });
 }
+
+$(".goBtn").click(function(){
+    var from = document.getElementById("fromNameId");
+    var to = document.getElementById("toNameId");
+    var fromText = from.options[from.selectedIndex].text;
+    var toText = to.options[to.selectedIndex].text;
+    console.log(fromText);
+    console.log(toText);
+});
