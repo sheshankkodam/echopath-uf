@@ -95,3 +95,17 @@ nav ul li a {
     float: left;
     display: inline-block;
 }
+
+.loogoLinkDesc {
+    font-family: "PT Sans Narrow", serif;
+    color: black;
+    font-size: 25px;
+    padding: 0% 2% 0 5%;
+    /*margin: 0% 40% 0 5.5%;*/
+    float: left;
+    display: inline-block;
+}
+
+.loogoLink {
+    color: blue;
+}
