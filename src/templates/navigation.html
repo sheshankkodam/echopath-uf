@@ -3,7 +3,8 @@
         <title>EchoPath</title>
         <script src="../frontend_static/node_modules/jquery/dist/jquery.min.js"></script>
         <link rel="stylesheet" href="../frontend_static/node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <script src="../frontend_static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--TODO: check if you need the bootstrap.min.js-->
+        <!--<script src="../frontend_static/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>-->
 
         <!-- Custom CSS @overrides bootstrap elements-->
         <link rel="stylesheet" href="../frontend_static/css/bootstrap_superhero.css">
@@ -15,7 +16,12 @@
             <nav>
                 <h1>EchoPath</h1>
                 <ul id="navId">
-                    <li> <a href="echopath.html">Home</a> </li>
+                    <li>
+                        <span style="vertical-align: middle;    ">
+                            <a href="echopath.html">Home</a>
+                        </span>
+
+                    </li>
                     <li> <a href="loogo.html">Loogo</a> </li>
                     <li> <a href="#">Navigation</a> </li>
                     <li> <a href="register.html">Register</a> </li>
@@ -25,28 +31,52 @@
             </nav>
         </header>
         <div class="divider"></div>
-        <div class="selectionsContainer">
-            <div class="glyphicon glyphicon-map-marker fromMarker"></div>
-            <div class="form-input">
-                <select class="dropDown" name="from_name" id="fromNameId"></select>
-            </div>
-            <div class="glyphicon glyphicon-map-marker toMarker"></div>
-            <div class="form-input">
-                <select class="dropDown" name="to_name" id="toNameId"></select>
-            </div>
-           <div class="col-lg-12">
-                <div class="row goBtnRow">
-                    <div class="col-xs-4">
-                        <button class="btn btn-success btn-sx goBtn" type="button">Go</button>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 selectionsContainer">
+                    <div class="col-xs-12">
+                        <div class="selectionsContainerContent">
+                            <div class="row">
+                                <div class="col-xs-2 glyphicon glyphicon-map-marker fromMarker"></div>
+                                <div class="form-input col-xs-10">
+                                    <select class="dropDown" name="from_name" id="fromNameId"></select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-2 glyphicon glyphicon-map-marker toMarker"></div>
+                                <div class="form-input col-xs-10">
+                                    <select class="dropDown" name="to_name" id="toNameId"></select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="pull-right">
+                                        <button class="btn btn-success btn-sx goBtn" type="button">Go</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-offset-2 col-xs-10">
+                            <div class="alert alert-warning navigationNotification" id="navigation-alert">
+                                <button type="button" class="close" data-dismiss="alert">x</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 selectionsContainer">
+                    <div class="directionsContainer">
+                        <!--<p class="pull-left"><strong>Route options</strong></p>-->
+                        <!--<p class="pull-left">From <strong>Durango</strong></p>-->
+                        <!--<p class="pull-left">To <strong>Aspen</strong></p>-->
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="alert alert-warning navigationNotification" id="navigation-alert">
-            <button type="button" class="close" data-dismiss="alert">x</button>
-        </div>
-        <div class="directionsContainer">
-
         </div>
     </body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

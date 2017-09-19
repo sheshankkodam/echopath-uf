@@ -1,16 +1,20 @@
 .selectionsContainer {
-    width: 500px;
-    height: 220px;
+    /*width: 500px;*/
+    /*height: 220px;*/
     /*padding: 5% 5% 5% 5%;*/
     /*text-align: center;*/
     background-color: rgba(52, 73, 94, 0.5);
-    margin: 1%;
     border-radius: 10px;
+}
+
+.selectionsContainerContent {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .dropDown {
     height: 45px;
-    width: 400px;
+    width: 100%;
     font-size: 18px;
     margin-bottom: 20px;
     background-color: #fff;
@@ -47,20 +51,21 @@
 }
 
 .navigationNotification {
-    width: 500px;
+    /*width: 500px;*/
     height: 50px;
     text-align: center;
-    margin: 1%;
+    /*margin: 1%;*/
     border-radius: 10px;
     color: #2b3e50;
     font-weight: bold;
 }
 
 .directionsContainer {
-    width: 500px;
-    height: 620px;
+    min-height: 100px;
+    /*width: 500px;*/
+    /*height: 620px;*/
     text-align: center;
-    background-color: rgba(52, 73, 94, 0.5);
-    margin: 1%;
+    /*background-color: rgba(52, 73, 94, 0.5);*/
+    /*margin: 1%;*/
     border-radius: 10px;
 }

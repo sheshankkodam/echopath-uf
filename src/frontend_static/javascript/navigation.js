@@ -32,6 +32,8 @@ function buildDropDown (dropDownId, emptyMessage) {
 $(".goBtn").click(function(){
     var fromObj = document.getElementById("fromNameId");
     var toObj = document.getElementById("toNameId");
+    var fromLocText = fromObj.options[fromObj.selectedIndex].text;
+    var toLocText = toObj.options[toObj.selectedIndex].text;
     var fromLocId = fromObj.options[fromObj.selectedIndex].value;
     var toLocId = toObj.options[toObj.selectedIndex].value;
 
@@ -52,7 +54,7 @@ $(".goBtn").click(function(){
 
     if (!isEmpty(fromLocId) && !isEmpty(toLocId)) {
         // $(".directionsContainer").show();
-        var shortestPathUrl = shorestPathBaseUrl + "?fromID=" + fromLocId + "&toID=" + toLocId;
+        showDirections(fromLocText, toLocText, fromLocId, toLocId)
     }
 });
 
@@ -65,4 +67,22 @@ function showNavigationAlert(message) {
 
 function isEmpty(value){
   return (value == null || value.length === 0);
+}
+
+function showDirections(fromLocName, toLocName, fromLocId, toLocId) {
+    console.log(fromLocName);
+    console.log(toLocName);
+    var shortestPathUrl = shorestPathBaseUrl + "?fromID=" + fromLocId + "&toID=" + toLocId;
+    $.ajax({
+        type: "GET",
+        url: shortestPathUrl,
+        success: function(data)
+        {
+            console.log(data);
+            console.log(data["totalDistance"]);
+            // document.getElementsByClassName("directionsContainer").innerHTML = '<p>html data</p>';
+            // $(".directionsContainer").html('<p class="pull-left">From: <strong>Route options</strong></p>');
+        }
+    });
+
 }
