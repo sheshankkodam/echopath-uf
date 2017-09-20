@@ -7,7 +7,7 @@ var locationsOnlyUrl = baseUrl + "/locationsOnly";
 var shorestPathBaseUrl = baseUrl + "/shortestPath";
 $(document).ready(function () {
     $("#navigation-alert").hide();
-    // $(".directionsContainer").hide();
+    $(".directionsContainerMain").hide();
     buildDropDown($('#fromNameId'), 'From?');
     buildDropDown($('#toNameId'), 'To?');
 
@@ -53,7 +53,6 @@ $(".goBtn").click(function(){
     }
 
     if (!isEmpty(fromLocId) && !isEmpty(toLocId)) {
-        // $(".directionsContainer").show();
         showDirections(fromLocText, toLocText, fromLocId, toLocId)
     }
 });
@@ -82,6 +81,7 @@ function createDivWithContent(classesArr, val) {
 }
 
 function showDirections(fromLocName, toLocName, fromLocId, toLocId) {
+    $(".directionsContainerMain").show();
     console.log(fromLocName);
     console.log(toLocName);
     var shortestPathUrl = shorestPathBaseUrl + "?fromID=" + fromLocId + "&toID=" + toLocId;
