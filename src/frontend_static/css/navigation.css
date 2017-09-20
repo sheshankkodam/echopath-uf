@@ -1,3 +1,6 @@
+.container-margin {
+    margin-top: 10px;
+}
 .selectionsContainer {
     /*width: 500px;*/
     /*height: 220px;*/
@@ -62,9 +65,10 @@
 
 .directionsContainer {
     min-height: 100px;
+    padding-top: 10px;
     /*width: 500px;*/
     /*height: 620px;*/
-    text-align: center;
+    /*text-align: center;*/
     /*background-color: rgba(52, 73, 94, 0.5);*/
     /*margin: 1%;*/
     border-radius: 10px;

@@ -69,6 +69,18 @@ function isEmpty(value){
   return (value == null || value.length === 0);
 }
 
+function createDiv(classesArr) {
+    return '<div class="' + classesArr.join(' ') + '">';
+}
+
+function closeDiv(){
+    return '</div>';
+}
+
+function createDivWithContent(classesArr, val) {
+    return createDiv(classesArr) + val + closeDiv();
+}
+
 function showDirections(fromLocName, toLocName, fromLocId, toLocId) {
     console.log(fromLocName);
     console.log(toLocName);
@@ -81,7 +93,18 @@ function showDirections(fromLocName, toLocName, fromLocId, toLocId) {
             console.log(data);
             console.log(data["totalDistance"]);
             // document.getElementsByClassName("directionsContainer").innerHTML = '<p>html data</p>';
-            // $(".directionsContainer").html('<p class="pull-left">From: <strong>Route options</strong></p>');
+            // $(".directionsContainer").html('<div class="row col-xs-12">From: fromLocName</div><div class="row col-xs-12">To</div>');
+            $("#fromLocation").html(fromLocName);
+            $("#toLocation").html(toLocName);
+            $("#distance").html(data["totalDistance"]);
+
+            // display routes..
+            createDiv(["row"]);
+            $("#routesId").html(
+                createDiv(["row"]) +
+                    createDivWithContent(["col-xs-12"], fromLocName) +
+                closeDiv()
+            );
         }
     });
 
